@@ -12,9 +12,9 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: build
-        run:
-          docker build -t vupham2002/devops_course_backend -f ./WebApplication1/Dockerfile.production:latest
+        run: |
+          docker build -t vupham2002/devops_course_backend -f ./WebApplication1/Dockerfile.production .
       - name: publish
-        run:
+        run: |
           docker login -u vupham2002 -p dckr_pat_lD2duIpZUpzJNQxOESDgGuH932U
           docker push vupham2002/devops_course_backend
