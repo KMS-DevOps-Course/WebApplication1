@@ -31,7 +31,7 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 
 var summaries = new[]
 {
-    "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+    "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "BAC"
 };
 
 app.MapGet("/weatherforecast", () =>
